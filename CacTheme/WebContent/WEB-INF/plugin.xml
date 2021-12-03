@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="CacTheme" name="Modulos CacTheme" provider-name="OneClick" version="1.0.0">
+    
+    <extension id="wp_dynamicContentSpots_CacTheme" point="com.ibm.portal.resourceaggregator.module">
+        <module id="wp_dynamicContentSpots_CacTheme">
+            
+
+<title lang="es" value="Áreas de contenido dinámico para tema 8.5"/>
+<description lang="es" value="Define todas las áreas de contenido dinámico para el tema 8.5. Esto permite superponer fácilmente cualquier área de contenido dinámico en otros módulos."/>
+
+           <contribution type="dyn-cs">
+                <sub-contribution type="markup" ref-id="CacTheme_footer">
+                    <uri value="res:{war:context-root}/themes/html/dynamicSpots/footer.jsp"/>
+                </sub-contribution>
+               
+                <sub-contribution type="markup" ref-id="CacTheme_layout">
+                    <uri value="lm:template"/>
+                </sub-contribution>
+               
+                <sub-contribution type="markup" ref-id="CacTheme_head">
+                    <uri value="res:{war:context-root}/themes/html/dynamicSpots/head.jsp"/>
+                </sub-contribution>
+                
+            </contribution>
+        </module>
+    </extension>
+
+</plugin>
